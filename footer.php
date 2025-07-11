@@ -23,17 +23,17 @@
                 </div>
             </div>
         </div>
-        <img class="position-absolute aos-img bottom-0 z-0" src="images/Kreise_Footer.svg" alt="">
+        <img data-aos="fade-left" class="position-absolute aos-img bottom-0 z-0" src="images/Kreise_Footer.svg" alt="">
     </div>
     <div class="footer_bottom">
-        <div class="container pt-3 pb-4 text-end">
-            <p class="small"><a href="#">Impressum</a> / <a href="#">Datenschutz</a></p>
+        <div class="container pt-lg-3 pt-2 pb-lg-4 pb-3 text-end">
+            <p class="small"><a href="#">Impressum</a>&nbsp;&nbsp;/&nbsp;&nbsp;<a href="#">Datenschutz</a></p>
         </div>
     </div>
 </footer>
 </div>
 <script src="js/bootstrap.bundle.min.js"></script>
-<script src="swiper/swiper-bundle.min.js"></script>
+<script src="js/aos.js"></script>
 <script src="js/script.js"></script>
 </body>
 </html>

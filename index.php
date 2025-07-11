@@ -10,11 +10,11 @@
             </div>
             <div class="row g-lg-5 g-4">
                 <div class="col-md-4">
-                    <h6>Psychotherapie</h6>
+                    <h6 class="mb-3">Psychotherapie</h6>
                     <p class="fw-light">In meiner Praxis biete ich Psychotherapie für Kinder, Jugendliche und junge Erwachsene bis zum vollendeten 21. Lebensjahr an. Das Therapieverfahren, nach dem ich arbeite, ist die Tiefenpsychologie.</p>
                 </div>
                 <div class="col-md-4">
-                    <h6>Behandlungsspektrum</h6>
+                    <h6 class="mb-3">Behandlungsspektrum</h6>
                     <p>Zum Behandlungsspektrum gehören unter anderem:</p>
                     <ul>
                         <li>Anpassungs- und Belastungsstörungen,</li>
@@ -27,16 +27,16 @@
                     </ul>
                 </div>
                 <div class="col-md-4">
-                    <h6>Zusammenarbeit mit den Eltern</h6>
+                    <h6 class="mb-3">Zusammenarbeit mit den Eltern</h6>
                     <p>Während in der Kinderpsychotherapie die Zusammenarbeit mit den Eltern und Bezugspersonen wichtig für den Therapieerfolg ist, werden bei Jugendlichen die Eltern je nach Alter weniger in die Therapie miteinbezogen oder auf Wunsch auch gar nicht.</p>
                 </div>
             </div>
         </div>
-        <img class="kreis_links aos-img position-absolute" src="images/Kreis_links.svg" alt="">
+        <img data-aos="fade-right" data-aos-delay="300" class="kreis_links aos-img position-absolute" src="images/Kreis_links.svg" alt="">
     </div>
     <div class="section2 position-relative">
         <div class="container position-relative z-1">
-            <div class="row g-4">
+            <div class="row g-lg-4 g-5">
                 <div class="col-lg-6">
                     <div class="item">
                         <h2 class="color2 mb-lg-5 mb-4">Ablauf</h2>
@@ -65,7 +65,7 @@
                 </div>
             </div>
         </div>
-        <img class="kreis_mitte aos-img position-absolute" src="images/Kreis_mitte.svg" alt="">
+        <img data-aos="zoom-in" class="kreis_mitte aos-img position-absolute" src="images/Kreis_mitte.svg" alt="">
     </div>
     <div class="section3">
         <div class="container">
@@ -89,8 +89,8 @@
                 </div>
                 <div class="col-lg-6 position-relative pt-4 pt-lg-0">
                     <div class="ms-lg-auto kreis_foto position-relative">
-                        <img class="w-100 position-relative z-1" src="images/Kreis_Foto-1.png" alt="">
-                        <img class="position-absolute aos-img z-0" src="images/Kreis_Foto.svg" alt="">
+                        <img class="w-100 h-100 position-relative z-1" src="images/Kreis_Foto-1.png" alt="">
+                        <img data-aos="fade-up" class="position-absolute aos-img z-0" src="images/Kreis_Foto.svg" alt="">
                     </div>
                 </div>
             </div>

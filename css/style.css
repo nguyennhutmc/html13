@@ -6,6 +6,7 @@ header .navbar{
     --bs-navbar-padding-y: 0;
     --bs-navbar-brand-padding-y:0;
     --bs-navbar-nav-link-padding-x:0;
+    --bs-navbar-brand-margin-end:0;
 }
 .sticky .navbar{
     background:#F5F8FA;
@@ -49,15 +50,17 @@ h6,h6 strong{
 .kreis_foto{
     --left:calc(var(--ratio-section)*5.52rem);
     --top:calc(var(--ratio-section)*7.86rem);
-    width: 33.125rem;
-    height:33.125rem;
+    width:calc(var(--ratio-section)*33.125rem);
+    height:calc(var(--ratio-section)*33.125rem);
     border-radius:100%;
     margin-top:var(--top);
     margin-left:var(--left);
 }
-.kreis_foto .position-absolute{
+.kreis_foto .aos-img{
     left:calc(var(--left)*-1);
     top:calc(var(--top)*-1);
+    width:calc(var(--ratio-section)*29.88675rem);
+    height:calc(var(--ratio-section)*29.9815rem);
 }
 .section1 .aos-img{
     width:calc(var(--ratio-section)*19.95763rem);
@@ -73,9 +76,33 @@ h6,h6 strong{
     :root {
         --ratio:0.75;
         --ratio-section: .5;
+        --header-height:15rem;
     }
     body{
-        font-size:1rem;
+        font-size:.875rem;
+    }
+    .img_logo{
+        height:calc(var(--header-height) - 1rem);
+    }
+    .sticky .img_logo,.menu[aria-expanded=true] ~ .navbar-brand .img_logo{
+        height:3.5rem;
+    }
+    .menu_btn{
+        height:1.5rem;
+    }
+    header .navbar-nav{
+        gap:0.5rem;
+        padding-top:1rem;
+    }
+    .section1 .aos-img{
+        top: 13.5rem;
+    }
+    .section2 .aos-img{
+        top: 13.5rem;
+        left: 3.5rem;
+    }
+    .footer_main .aos-img{
+        right:.625rem;
     }
 }
 

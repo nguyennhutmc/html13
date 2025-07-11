@@ -14,13 +14,14 @@
     <header>
         <nav class="navbar navbar-expand-lg navbar-light fixed-top vw-100 z-6">
             <div class="container align-items-start">
-                <!-- Menu bên trái -->
-                <div class="d-flex align-items-center me-auto">
-                    <button class="navbar-toggler me-2" type="button" data-bs-toggle="collapse" data-bs-target="#mainNavbar">
-                        <span class="navbar-toggler-icon"></span>
-                    </button>
-                    <div class="collapse navbar-collapse" id="mainNavbar">
-                        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <a class="menu mb me-2 mt-3" data-bs-toggle="collapse" data-bs-target="#mainNavbar">
+                        <img class="menu_btn" src="images/menu.svg" alt="">
+                    </a>
+                    <a data-aos="fade-left" class="navbar-brand order-lg-2 ms-auto position-relative" href="#">
+                        <img class="img_logo" src="images/logo.svg" alt="">
+                    </a>
+                    <div class="collapse navbar-collapse order-lg-1" id="mainNavbar">
+                        <ul data-aos="fade-right" class="navbar-nav me-auto mb-2 mb-lg-0">
                             <li class="nav-item">
                                 <a class="nav-link" href="#">Psychotherapie</a>
                             </li>
@@ -35,12 +36,6 @@
                             </li>
                         </ul>
                     </div>
-                </div>
-
-                <!-- Logo bên phải -->
-                <a class="navbar-brand ms-auto position-relative" href="#">
-                    <img class="img_logo" src="images/logo.svg" alt="">
-                </a>
             </div>
         </nav>
     </header>
