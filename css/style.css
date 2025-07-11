@@ -1,0 +1,115 @@
+header{}
+.img_logo{
+    transition:all .2s;
+}
+header .navbar{
+    --bs-navbar-padding-y: 0;
+    --bs-navbar-brand-padding-y:0;
+    --bs-navbar-nav-link-padding-x:0;
+}
+.sticky .navbar{
+    background:#F5F8FA;
+    box-shadow: var(--bs-box-shadow-sm) !important;
+}
+.header_height{height:var(--header-height)}
+header .navbar-nav{
+    --bs-nav-link-color:rgb(89, 91, 97);
+    --bs-nav-link-font-weight:600;
+    gap:3.32rem;
+}
+main{}
+footer{}
+.footer_main{
+    background-color:rgb(230,236,244);
+    padding-top:calc(var(--ratio-section)*5.4rem);
+    padding-bottom:calc(var(--ratio-section)*4rem);
+}
+.footer_icon{
+    width: 2.625rem;
+}
+.footer_bottom{
+
+}
+.color1{
+    color:rgb(168,119,167);
+}
+.color2{
+    color:rgb(101,141,180);
+}
+.color3{
+
+}
+h6,h6 strong{
+    color:rgb(87,87,86);
+    font-weight:600;
+}
+.section1,.section2,.section3{
+    margin-bottom:calc(var(--ratio-section)*9rem);
+}
+.kreis_foto{
+    --left:calc(var(--ratio-section)*5.52rem);
+    --top:calc(var(--ratio-section)*7.86rem);
+    width: 33.125rem;
+    height:33.125rem;
+    border-radius:100%;
+    margin-top:var(--top);
+    margin-left:var(--left);
+}
+.kreis_foto .position-absolute{
+    left:calc(var(--left)*-1);
+    top:calc(var(--top)*-1);
+}
+.section1 .aos-img{
+    width:calc(var(--ratio-section)*19.95763rem);
+}
+.section2 .aos-img{
+    width:calc(var(--ratio-section)*33.59519rem);
+}
+.footer_main .aos-img{
+    width:calc(var(--ratio-section)*34.79738rem);
+}
+/* mobile */
+@media (max-width: 991.98px) {
+    :root {
+        --ratio:0.75;
+        --ratio-section: .5;
+    }
+    body{
+        font-size:1rem;
+    }
+}
+
+/* desktop */
+@media (min-width: 992px) {
+    header .img_logo{
+        width:33.9375rem;
+    }
+    header .navbar-nav{
+        padding-top:3rem;
+    }
+    .footer_main{
+        min-height:27.4375rem;
+    }
+    .section2 .aos-img{
+
+    }
+    .section3 .item_left{
+        width:46.25rem;
+    }
+    .footer_main .aos-img{
+        right:12.7rem;
+    }
+    .section1 .aos-img{
+        top: 20.5rem;
+        left:0;
+    }
+    .section2 .aos-img{
+        top:23.65rem;
+        left:32.75rem;
+    }
+    .sticky .img_logo{
+        width:10rem;
+    }
+}
+
+@media (min-width: 1920px) {}

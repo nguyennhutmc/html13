@@ -1,0 +1,255 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+:root {
+    --ratio:1;
+    --ratio-section:1;
+    --color-primary:#9D65AA;
+    --bs-nav-link-font-size:calc(var(--ratio)*1.375rem);
+    --bs-btn-font-size:calc(var(--ratio)*1.25rem);
+    --bs-body-font-size:calc(var(--ratio)*1.25rem);
+    --header-height:17rem;
+    --bs-body-color:#3c3c3b;
+    --bs-secondary-color:#716c80;
+}
+
+.disabled, [disabled] {
+    --bs-btn-disabled-opacity: 0.3552;
+}
+
+#loader {
+    background-size: 60% auto;
+    background-repeat: no-repeat;
+    background-position: center 50%;
+    background-color: #fff;
+    border-radius: 50rem;
+    box-shadow: 0px 1px 20px 0px rgba(112, 112, 112, 0.75);
+    position: fixed;
+    z-index: 99993;
+    width: 80px;
+    height: 80px;
+    line-height: 80px;
+    left: 50% !important;
+    top: 50% !important;
+    margin: -40px 0 0 -40px;
+    vertical-align: top;
+}
+
+#loader .spinner-border {
+    vertical-align: top;
+    width: 100%;
+    height: 100%;
+    margin-top: 0;
+    color: var(--color-primary, #999);
+    border-width: 2px;
+    animation-duration: 1s !important;
+}
+
+.form-control:read-only,
+.form-control:disabled {
+    background-color: #e9ecef;
+    opacity: 1;
+}
+
+.btn:disabled {
+    background: #cdcdcd;
+    border-color: #cdcdcd;
+}
+
+html {
+    width: 100vw;
+    overflow-x: hidden;
+}
+
+body {
+    font-family: "Open Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight:300;
+    font-style: normal;
+    overflow-x: hidden;
+    margin-right: 0 !important;
+    padding-right: 0 !important;
+    background-color: #F5F8FA;
+}
+
+*,
+::before,
+::after {
+    background-repeat: no-repeat;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    object-fit: cover;
+    object-position: center;
+    user-select: none;
+}
+
+figure figcaption {
+    font-size: 0.75rem;
+    margin-top: 0.375rem;
+}
+
+.lh-normal {
+    line-height: normal;
+}
+.lh-12{
+    line-height:1.2;
+}
+a,
+[onclick],
+.btn,
+button,
+input {
+    cursor:pointer;
+    text-decoration: none;
+    outline: none;
+    box-shadow: none !important;
+}
+
+a {
+    color: inherit;
+}
+dl, ol, ul {
+}
+p{
+    margin-bottom:0;
+}
+b,
+strong {
+    font-weight:600;
+    color: rgb(87, 87, 86);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin: 0;
+    padding: 0;
+    font-weight:700;
+    font-size: inherit;
+    line-height: inherit;
+}
+h1{
+    font-size:calc(var(--ratio-section)*2.625rem);
+    font-weight:400;
+    line-height:1.2;
+}
+h2{
+    font-size:calc(var(--ratio-section)*2.625rem);
+    font-weight:400;
+    line-height:1.2;
+}
+h6{}
+ol,
+ul {
+    padding-left:1rem;
+    margin-bottom:1rem;
+}
+li::marker {
+    font-size:65%;
+}
+span[style] {
+    font-family: inherit !important;
+}
+
+input {
+    box-shadow: none !important;
+}
+
+.text_ellipsis {
+    -webkit-line-clamp: 2;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+table, .table {
+    margin-bottom: 0;
+}
+
+.container {
+    position: relative;
+}
+.text-editor img {
+    height: auto !important;
+}
+
+.text-editor a {
+    color: rgba(var(--bs-link-color-rgb));
+}
+.border-primary{
+    border-color:#00376C!important;
+}
+.text-primary{
+    color:#00376C!important;
+}
+.btn{
+    --bs-btn-font-size:calc(var(--ratio)*1rem);
+}
+@media (max-width: 991px) {
+    :root{
+        --header-height:3.125rem;
+    }
+    html {
+        font-size: 4.266666666666667vw; /*16px*/
+    }
+    .pc {
+        display: none !important;
+    }
+
+    .mb {
+        display: block !important;
+    }
+
+    .container {
+        width: 100%;
+        max-width: 100%;
+        --bs-gutter-x:1.25rem;
+    }
+}
+
+@media (min-width: 992px) {
+    html {
+        /*16px~1920px*/
+        font-size:0.8333333333333333vw;
+    }
+    body{
+        font-size:1.25rem;
+    }
+    .pc {
+        display: block !important;
+    }
+
+    .mb {
+        display: none !important;
+    }
+
+    .container {
+        width:88.75rem;
+        max-width: none;
+        --bs-gutter-x: 0;
+    }
+}
+
+@media (min-width: 992px) and (max-width: 1024px) {
+    html {
+    }
+}
+
+@media (min-width: 1025px) and (max-width: 1439.98px) {
+    html {
+    }
+}
+
+::placeholder {
+    opacity: 1 !important; /* Firefox */
+}
+
+::-ms-input-placeholder { /* Edge 12 -18 */
+    color: #716C80;
+    opacity: 1 !important;
+}
