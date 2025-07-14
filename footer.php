@@ -23,7 +23,7 @@
                 </div>
             </div>
         </div>
-        <img data-aos="fade-left" class="position-absolute aos-img bottom-0 z-0" src="images/Kreise_Footer.svg" alt="">
+        <img data-aos="fade-left" data-aos-offset="0" class="position-absolute aos-img bottom-0 z-0" src="images/Kreise_Footer.svg" alt="">
     </div>
     <div class="footer_bottom">
         <div class="container pt-lg-3 pt-2 pb-lg-4 pb-3 text-end">

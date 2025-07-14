@@ -8,10 +8,6 @@ header .navbar{
     --bs-navbar-nav-link-padding-x:0;
     --bs-navbar-brand-margin-end:0;
 }
-.sticky .navbar{
-    background:#F5F8FA;
-    box-shadow: var(--bs-box-shadow-sm) !important;
-}
 .header_height{height:var(--header-height)}
 header .navbar-nav{
     --bs-nav-link-color:rgb(89, 91, 97);
@@ -81,6 +77,10 @@ h6,h6 strong{
     body{
         font-size:.875rem;
     }
+    .sticky .navbar{
+        background:#F5F8FA;
+        box-shadow: var(--bs-box-shadow-sm) !important;
+    }
     .img_logo{
         height:calc(var(--header-height) - 1rem);
     }
@@ -108,6 +108,10 @@ h6,h6 strong{
 
 /* desktop */
 @media (min-width: 992px) {
+    header{
+        position:absolute;
+        height:var(--header-height);
+    }
     header .img_logo{
         width:33.9375rem;
     }
@@ -135,7 +139,6 @@ h6,h6 strong{
         left:32.75rem;
     }
     .sticky .img_logo{
-        width:10rem;
     }
 }
 

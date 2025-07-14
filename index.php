@@ -32,7 +32,7 @@
                 </div>
             </div>
         </div>
-        <img data-aos="fade-right" data-aos-delay="300" class="kreis_links aos-img position-absolute" src="images/Kreis_links.svg" alt="">
+        <img data-aos="fade-right" class="kreis_links aos-img position-absolute" src="images/Kreis_links.svg" alt="">
     </div>
     <div class="section2 position-relative">
         <div class="container position-relative z-1">
@@ -65,7 +65,7 @@
                 </div>
             </div>
         </div>
-        <img data-aos="zoom-in" class="kreis_mitte aos-img position-absolute" src="images/Kreis_mitte.svg" alt="">
+        <img data-aos="fade-right" class="kreis_mitte aos-img position-absolute" src="images/Kreis_mitte.svg" alt="">
     </div>
     <div class="section3">
         <div class="container">
@@ -89,8 +89,8 @@
                 </div>
                 <div class="col-lg-6 position-relative pt-4 pt-lg-0">
                     <div class="ms-lg-auto kreis_foto position-relative">
-                        <img class="w-100 h-100 position-relative z-1" src="images/Kreis_Foto-1.png" alt="">
-                        <img data-aos="fade-up" class="position-absolute aos-img z-0" src="images/Kreis_Foto.svg" alt="">
+                        <img data-aos="fade-left" id="kreis_Foto1" class="w-100 h-100 position-relative z-1" src="images/Kreis_Foto-1.png" alt="">
+                        <img data-aos="fade-down" data-aos-anchor="#kreis_Foto1" class="position-absolute aos-img z-0" src="images/Kreis_Foto.svg" alt="">
                     </div>
                 </div>
             </div>
