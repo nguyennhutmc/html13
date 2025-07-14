@@ -90,6 +90,12 @@ h6,h6 strong{
     .menu_btn{
         height:1.5rem;
     }
+    header .navbar{
+        position:fixed;
+        left:0;
+        top:0;
+        z-index:2;
+    }
     header .navbar-nav{
         gap:0.5rem;
         padding-top:1rem;

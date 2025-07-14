@@ -4,7 +4,7 @@ function init() {
     $('body').addClass($("main").attr("class"));
     const myCollapsible = document.getElementById('mainNavbar')
     myCollapsible.addEventListener('show.bs.collapse', event => {
-        //$('body').addClass('sticky');
+        $('body').addClass('sticky');
     });
     myCollapsible.addEventListener('hidden.bs.collapse', event => {
         var winscroll = $(window).scrollTop();
@@ -17,9 +17,9 @@ function init() {
 function _sticky() {
     var winscroll = $(window).scrollTop();
     if (winscroll >= vw * 17) {
-        //$("body").addClass("sticky");
+        $("body").addClass("sticky");
     } else {
-        //$("body").removeClass("sticky");
+        $("body").removeClass("sticky");
     }
 }
 $(function () {
@@ -35,5 +35,7 @@ $(function () {
 });
 var lastScrollTop = 0;
 $(window).on("scroll", function (event) {
-    _sticky();
+    if ($(window).width() < 992) {
+        _sticky();
+    }
 });
