@@ -16,7 +16,7 @@ function init() {
 
 function _sticky() {
     var winscroll = $(window).scrollTop();
-    if (winscroll >= vw * 17) {
+    if (winscroll >= vw * 3.5) {
         $("body").addClass("sticky");
     } else {
         $("body").removeClass("sticky");
@@ -24,18 +24,22 @@ function _sticky() {
 }
 $(function () {
     init();
+});
+$(window).load(function(){
     AOS.init({
-        //once: false,
+        once: false,
         offset: 280, // offset (in px) from the original trigger point
         delay: 300, // values from 0 to 3000, with step 50ms
         //duration:500, // values from 0 to 3000, with step 50ms
         easing: 'ease-in-sine',
-        anchorPlacement: 'top-top',
+        mirror: true,
+        //anchorPlacement: 'top-top',
     });
 });
 var lastScrollTop = 0;
 $(window).on("scroll", function (event) {
     if ($(window).width() < 992) {
         _sticky();
+        //AOS.refreshHard();
     }
 });

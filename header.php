@@ -17,11 +17,11 @@
                     <a class="menu mb me-2 mt-3" data-bs-toggle="collapse" data-bs-target="#mainNavbar">
                         <img class="menu_btn" src="images/menu.svg" alt="">
                     </a>
-                    <a class="navbar-brand order-lg-2 ms-auto position-relative" href="#">
-                        <img data-aos-delay="500" data-aos="fade-left" data-aos-offset="0" class="img_logo" src="images/logo.svg" alt="">
+                    <a data-aos="fade-left" class="navbar-brand order-lg-2 ms-auto position-relative" href="#">
+                        <img class="img_logo" src="images/logo.svg" alt="">
                     </a>
                     <div class="collapse navbar-collapse order-lg-1" id="mainNavbar">
-                        <ul data-aos-delay="500" data-aos="fade-right" data-aos-offset="0" class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <ul data-aos="fade-right" data-aos-offset="0" class="navbar-nav me-auto mb-2 mb-lg-0">
                             <li class="nav-item">
                                 <a class="nav-link" href="#">Psychotherapie</a>
                             </li>
