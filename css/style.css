@@ -106,6 +106,7 @@ h6,h6 strong{
         padding-top:1rem;
         transform: none!important;
         opacity:1!important;
+        pointer-events:all;
     }
     .section1 .aos-img{
         top: 13.5rem;

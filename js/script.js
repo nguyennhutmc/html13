@@ -12,6 +12,9 @@ function init() {
             $('body').removeClass('sticky');
         }
     });
+    $('header .nav-link').on('click', function() {
+        $('#mainNavbar').collapse('hide');
+    });
 }
 
 function _sticky() {
@@ -27,7 +30,7 @@ $(function () {
 });
 $(window).load(function(){
     if ($(window).width() >= 992) {
-        var set_offset=280,
+        var set_offset=17.5*vw,
             set_mirror=true;
     }
     else{
@@ -48,6 +51,5 @@ var lastScrollTop = 0;
 $(window).on("scroll", function (event) {
     if ($(window).width() < 992) {
         _sticky();
-        //AOS.refreshHard();
     }
 });
